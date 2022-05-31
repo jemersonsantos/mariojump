@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.game-board{
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(/img/nuvem.gif);
+}
+
+.tubo{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: tubo-animation 4s infinite linear;
+}
+@keyframes tubo-animation {
+    from{
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.mario{
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+}
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+    0%{bottom: 0;}
+    5%{bottom: 120px;}
+    10%{bottom: 140px;}
+    15%{bottom: 160px;}
+    20%{bottom: 180px;}
+    25%{bottom: 170px;}
+    30%{bottom: 160px;}
+    35%{bottom: 150px;}
+    40%{bottom: 140px;}
+    45%{bottom: 130px;}
+    50%{bottom: 120px;}
+    55%{bottom: 110px;}
+    60%{bottom: 100px;}
+    65%{bottom: 90px;}
+    70%{bottom: 80px;}
+    75%{bottom: 70px;}
+    80%{bottom: 60px;}
+    85%{bottom: 50px;}
+    90%{bottom: 40px;}
+    95%{bottom: 30px;}   
+    100%{bottom: 0;}
+}
